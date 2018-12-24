@@ -1,5 +1,5 @@
 {
-  "version": "0.1.6",
+  "version": "0.1.8",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -53,6 +53,6 @@
   "name": "@phamlinh0208/vue2-ez-common",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/npm/cli.git"
+    "url" : "https://github.com/PhamLinh0889/vue2-inline-edit.git"
   }
 }
