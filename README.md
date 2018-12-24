@@ -1,29 +1,39 @@
 # vue-inline-edit
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
+### Import Component 
 ```
-npm run serve
+   <template>
+   <EzInlineEdit :inputData="props.item.username"
+                 inputClass="input-inline"
+                 @inlineUpdateVale="inlineUpdateVale(valueToEdit)"/>
+   </template>
+   <script>
+      import Components from '@phamlinh0208/vue2-ez-common'
+    
+      export default {
+        components: {
+          ...Components
+        },
+        data() {
+            valueToEdit: ''
+        }
+      }
+  </script>
 ```
+ 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Component props
 
-### Run your tests
 ```
-npm run test
+      inputData: {default: ''},
+      inputClass: {default: ''},
+      inputStyleOption: {default: null},
+      displayClass: {default: ''},
+      displayStyle: {default: 'border-bottom: dotted 1px;'}
 ```
-
-### Lints and fixes files
+### Component event when value changed
 ```
-npm run lint
+method : inlineUpdateVale
+    - payload : value after change
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

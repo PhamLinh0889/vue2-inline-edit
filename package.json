@@ -1,11 +1,10 @@
 {
-  "name": "vue-inline-edit",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.6",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name vue2-ez-common ./src/components/index.js"
   },
   "dependencies": {
     "vue": "^2.5.17"
@@ -42,5 +41,18 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": "./dist/vue2-ez-common.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "name": "@phamlinh0208/vue2-ez-common",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/npm/cli.git"
+  }
 }
